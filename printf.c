@@ -2,7 +2,7 @@
 
 int main() {
 
-    printf("Hello World\n");
+    printf("Hello \tWorld. ");
     printf("My name is sanjida.\n I am a Student.\n");
 
     printf("%d\n", 5+12);
