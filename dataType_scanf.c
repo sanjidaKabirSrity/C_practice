@@ -8,7 +8,8 @@ int main() {
 
     printf("%d Integer Number. %f Floating Number.\n", num1, num2);
     printf("'%c' this is a character\n", ch);
-
+ 
+ 
     // C Input System
     int a , b, c;
     float a1, b1, c1;

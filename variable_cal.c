@@ -24,5 +24,24 @@ int main() {
     num3 = 25;
     printf("%d\n", num3);
 
+
+    // Simple Calculator
+    float f_num1, f_num2, result_f;
+    
+    printf("Please Enter Two Numbers: ");
+    scanf("%f %f", &f_num1, &f_num2);
+
+    result_f = f_num1+f_num2;
+    printf("%.2f + %.2f = %.2f\n", f_num1, f_num2, result_f);
+
+    result_f = f_num1-f_num2;
+    printf("%.2f - %.2f = %.2f\n", f_num1, f_num2, result_f);
+
+    result_f = f_num1*f_num2;
+    printf("%.2f * %.2f = %.2f\n", f_num1, f_num2, result_f);
+
+    result_f = f_num1/f_num2;
+    printf("%.2f / %.2f = %.2f\n", f_num1, f_num2, result_f);
+
     return 0;
 }
