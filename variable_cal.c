@@ -2,6 +2,7 @@
 #define PI 3.1416
 
 int main() {
+    // Variable
     int num1 = 50;
     int num2 = 30;
 
