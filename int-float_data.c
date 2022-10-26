@@ -61,5 +61,19 @@ int main() {
     long double ld = 67856775.98411;
     printf("Long Double : %LF\n", ld);
 
+
+
+    // Character in c
+    // char - %c
+    char a1, a2, b, c;
+    a1 = 'A';
+    a2 = 'a';
+    b = 'D'-2;
+    c = 'A'+3;
+    printf("Char : %c is %d\n", a1, a1);
+    printf("Char : %c is %d\n", b, b);
+    printf("Char : %c is %d\n", c, c);
+    printf("Char : %c is %d\n", a2, a2);
+
     return 0;
 }
