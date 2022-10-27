@@ -24,10 +24,10 @@ int main(){
 
     printf("index 0 = %c\nindex 3 = %c\n", name1[0], name1[3]);
 
-    char name4[20]; 
-    printf("What is your Name?");
-    scanf("%s\n", &name4);
-    printf("Thank You, %s\n", name4);
+    // char name4[20]; 
+    // printf("What is your Name?");
+    // scanf("%s\n", &name4);
+    // printf("Thank You, %s\n", name4);
 
     return 0;
 }

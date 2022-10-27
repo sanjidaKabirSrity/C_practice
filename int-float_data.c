@@ -48,7 +48,6 @@ int main() {
     printf("Unsigned Negative Short Integers %hu, %hu, %hu\n", us_neg1, us_neg2, us_neg3);
 
 
-
     // ----------Float Type Data-----------
     printf("Float Numbers:-\n");
     // Float - %f
@@ -62,7 +61,6 @@ int main() {
     printf("Long Double : %LF\n", ld);
 
 
-
     // Character in c
     // char - %c
     char a1, a2, b, c;
@@ -74,6 +72,28 @@ int main() {
     printf("Char : %c is %d\n", b, b);
     printf("Char : %c is %d\n", c, c);
     printf("Char : %c is %d\n", a2, a2);
+
+
+
+    ///////////////////////////////////////////
+    // Type Conversion
+    char ch = 'T';
+    int r = (int)ch + 100;
+    printf("Char %c; Decimal %d; Hexadecimal %x\n", ch, ch, ch);
+    printf("Result %d\n", r);
+
+    // float fr = (float)r;
+    printf("Float: %f\n", (float)r);
+
+    float fa, fb, fc;
+    int result;
+    fa = 4.5;
+    fb = 5.3;
+    fc = 6.2;
+    result = fa + fb + fc;
+    printf("Total(no conversion) = %d\n", result);
+    result = (int)fa + (int)fb + (int)fc;
+    printf("Total = %d\n", result);
 
     return 0;
 }
