@@ -2,8 +2,8 @@
 
 int main() {
 
-    printf("Hello \tWorld. ");
-    printf("My name is sanjida.\n I am a Student.\n");
+    printf("Hello \tWorld.\n");
+    printf("\"My name is sanjida\". I am a Student.\n");
 
     printf("%d\n", 5+12);
     printf("%d\n" , 18-8);
