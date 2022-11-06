@@ -92,5 +92,16 @@ int main(){
         printf("Alas! You Lose.\tPicked Number was %d\n", picked_number);
     } */
 
+
+
+    //// Draw A Star Box
+    int width = 10, height = 10, i, j;
+    for (i = 0; i < height; i++) {
+        for (j = 0; j < width; j++) {
+            printf("* ");
+        }
+        printf("\n");
+    }
+
     return 0;
 }
