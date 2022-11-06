@@ -1,8 +1,10 @@
 #include "stdio.h"
+#include "stdlib.h"
+#include "time.h"
 
 int main(){
 
-    // Even-Odd number 
+    //// Even-Odd number 
     /* int n;
     printf("Enter An Integer Number: ");
     scanf("%d", &n);
@@ -15,7 +17,7 @@ int main(){
 
 
 
-    // Upercase to Lowercase number
+    //// Upercase to Lowercase number
     /* char ch;
     printf("Enter a Character: ");
     scanf("%c", &ch);
@@ -29,8 +31,8 @@ int main(){
 
 
 
-    // Leap Year
-    int year, is_leapyear;
+    //// Leap Year
+    /* int year, is_leapyear;
     printf("Enter a year number: ");
     scanf("%d", &year);
     
@@ -44,7 +46,7 @@ int main(){
         printf("Leap year\n");
     } else {
         printf("This year is not Leap year\n");
-    }
+    } */
 
     /* if(year%4 == 0){    // type-2
         if (year%100 == 0){
@@ -70,6 +72,24 @@ int main(){
         printf("Leap Year\n");
     } else {
         printf("This year is not Leap year\n");
+    } */
+
+
+
+    //// Pick A Lucky Number
+    /* int picked_number, given_number;
+    time_t t;
+
+    srand((unsigned)time(&t));
+    picked_number = rand() % 10+1;
+
+    printf("Enter a number for game(1-10) : ");
+    scanf("%d", &given_number);
+
+    if (picked_number == given_number) {
+        printf("Hurrah! You Win\n");
+    } else {
+        printf("Alas! You Lose.\tPicked Number was %d\n", picked_number);
     } */
 
     return 0;
