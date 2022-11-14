@@ -1,6 +1,7 @@
 #include "stdio.h"
 #include "stdlib.h"
 #include "time.h"
+#include "stdbool.h"
 
 int main(){
 
@@ -17,6 +18,7 @@ int main(){
 
 
 
+
     //// Upercase to Lowercase number
     /* char ch;
     printf("Enter a Character: ");
@@ -28,6 +30,28 @@ int main(){
     } else {
         printf("Invalid Letter\n");
     } */
+
+
+
+
+    /* //// Upercase-Lowercase vice varse -> using while loop
+    char name[30]; 
+    int i = 0;
+    printf("Enter String: ");
+    fgets(name, 30, stdin);
+
+    while (name[i])
+    {
+        if (name[i]>='A' && name[i]<='Z') {
+            name[i] = name[i] + 32;
+        } else if (name[i]>='a' && name[i]<='z') {
+            name[i] = name[i]-32;
+        }
+
+        i++;
+    }
+    printf("%s\n", name); */
+    
 
 
 
@@ -76,6 +100,7 @@ int main(){
 
 
 
+
     //// Pick A Lucky Number
     /* int picked_number, given_number;
     time_t t;
@@ -94,14 +119,162 @@ int main(){
 
 
 
-    //// Draw A Star Box
+
+    //// Pick A Lucky Number - using while loop
+    /* int choosen_num, lucky_num, chance = 3, is_loss = true;
+    time_t t;
+    srand((unsigned)time(&t));
+    lucky_num = rand() % 10+1;
+
+    while (chance > 0)
+    {
+        printf("Guess The Lucky Number. chance(%d): ", chance);
+        scanf("%d", &choosen_num);
+
+        if(lucky_num == choosen_num) {
+            printf("Congratulation! You have choose the correct number\n");
+            is_loss = false;
+            break;
+        } else {
+            printf("Try again\n");
+        }
+        chance--;
+    }
+
+    if(is_loss){
+        printf("Sorry! You loss. The correct number was %d", lucky_num);
+    } */
+
+
+
+
+    /* //// Pick A Lucky Number - using Do while loop
+    int choosen_num, lucky_num, chance = 3, is_loss = true;
+    time_t t;
+    srand((unsigned)time(&t));
+    lucky_num = rand() % 20+1;
+
+    do
+    {
+        printf("Guess The Lucky Number. chance(%d): ", chance);
+        scanf("%d", &choosen_num);
+
+        if(lucky_num == choosen_num) {
+            printf("Congratulation! You have choose the correct number\n");
+            is_loss = false;
+            break;
+        } else if (lucky_num < choosen_num) {
+            printf("Your Choosen Number is Big. Try again\n");
+        } else {
+            printf("Your Choosen Number is Small. Try again\n");
+        }
+
+        chance--;
+    } while (chance > 0);
+
+    if(is_loss){
+        printf("Sorry! You loss. The correct number was %d\n", lucky_num);
+    } */
+    
+
+
+
+    /* //// Draw A Star Box
     int width = 10, height = 10, i, j;
     for (i = 0; i < height; i++) {
         for (j = 0; j < width; j++) {
             printf("* ");
         }
         printf("\n");
+    } */
+        
+
+
+
+    /* //// Draw Half Piramid
+    int rows = 5, i, j;
+    for (i = 0; i < rows; i++) {
+        for (j = 0; j < i; j++) {
+            printf("* ");
+        }
+        printf("\n");
     }
+    for (i = rows; i > 0; i--) {
+        for (j = 0; j < i; j++) {
+            printf("* ");
+        }
+        printf("\n");
+    } */
+            
+
+
+
+    //// Draw Full Piramid
+    /* int rows = 5, i, j;
+    for (i = 0; i < rows; i++) {
+        for (j = i; j < rows; j++) {
+            printf("  ");
+        }
+        for (j = i; j > 0; j--) {
+            printf("* ");
+        }
+        for (j = i-1; j > 0; j--) {
+            printf("* ");
+        }
+        printf("\n");
+    }
+    for (i = rows; i > 0; i--) {
+        for (j = i; j < rows; j++) {
+            printf("  ");
+        }
+        for (j = i; j > 0; j--) {
+            printf("* ");
+        }
+        for (j = i-1; j > 0; j--) {
+            printf("* ");
+        }
+        printf("\n");
+    } */
+
+    /* int rows = 5, i, j;
+    for (i = 0; i < rows; i++) {
+        for (j = i; j < rows; j++) {
+            printf("  ");
+        }
+        for (j = 0; j < (2*i)-1; j++) {
+            printf("* ");
+        }
+        printf("\n");
+    }
+    for (i = rows; i > 0; i--) {
+        for (j = i; j < rows; j++) {
+            printf("  ");
+        }
+        for (j = 0; j < (2*i)-1; j++) {
+            printf("* ");
+        }
+        printf("\n");
+    } */
+
+    /* int i, j, rows = 5, stars = 1, spaces = rows-1;
+    for (i = 1; i < rows*2; i++) {
+        for (j = 1; j <= spaces; j++) {
+            printf("  ");
+        }
+        for (j = 1; j < stars*2; j++){
+            printf("* ");
+        }
+        printf("\n");
+
+        if (i < rows) {
+            spaces--;
+            stars++;
+        } else {
+            spaces++;
+            stars--;
+        }
+    } */
+
 
     return 0;
 }

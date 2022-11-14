@@ -29,11 +29,12 @@ int main () {
     }
     printf("\n");
     
+
     
     // While Loop
     int num1, num2;
     char ch;
-    while (ch != 'q')
+    /* while (ch != 'q')
     {
         printf("Enter two number: ");
         scanf("%d %d", &num1, &num2);
@@ -41,7 +42,17 @@ int main () {
 
         printf("Type 'c' to continue(try again). Or, Type 'q' to quite:- ");
         scanf(" %c", &ch);
-    }
+    } */
+
+    
+    
+    // Do While Loop
+    int n = 5;
+    do
+    {
+        printf("I will run at least once\n");
+    } while (n < 5);
+    
     
 
     return 0;
