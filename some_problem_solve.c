@@ -274,6 +274,25 @@ int main(){
             stars--;
         }
     } */
+            
+
+
+
+    //// Write a program to find the perimeter and of a circle. The program will ask the user for a radius. and Then print the perimeter and area
+    // Formula:
+    //      Perimeter = 2 * pi * r
+    //      Area = pi * r^2
+    // Sample Interaction: 
+    //      Enter radius: 1
+    //      Perimeter = 6.28
+    //      Area = 3.14
+    printf("Enter radius: ");
+    const float PI = 3.1416;
+    float radius, perimeter, area;
+    scanf("%f", &radius);
+    perimeter = 2 * PI * radius;
+    area = PI * radius * radius;
+    printf("Perimeter = %.2f\nRadius = %.2f\n", perimeter, area);
 
 
     return 0;
