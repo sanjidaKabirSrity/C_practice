@@ -278,7 +278,7 @@ int main(){
 
 
 
-    //// Write a program to find the perimeter and of a circle. The program will ask the user for a radius. and Then print the perimeter and area
+    /* //// Write a program to find the perimeter and of a circle. The program will ask the user for a radius. and Then print the perimeter and area
     // Formula:
     //      Perimeter = 2 * pi * r
     //      Area = pi * r^2
@@ -292,7 +292,7 @@ int main(){
     scanf("%f", &radius);
     perimeter = 2 * PI * radius;
     area = PI * radius * radius;
-    printf("Perimeter = %.2f\nRadius = %.2f\n", perimeter, area);
+    printf("Perimeter = %.2f\nRadius = %.2f\n", perimeter, area); */
 
 
     return 0;
